@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        
+        function squareRoots(a, b, c) {
+            const d = b * b - 4 * a * c; 
+
+            if (d < 0)
+                return []; 
+
+            if (d == 0)
+                return [-b / (2 * a)]; 
+            if (a == 0)
+                return [-c / b]
+
+            const x1 = (-b + Math.sqrt(d)) / (2 * a);
+            const x2 = (-b - Math.sqrt(d)) / (2 * a);
+            return [x1, x2]; 
+        }
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>
